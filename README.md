@@ -5,6 +5,13 @@ https://app.swaggerhub.com/apis/dataday/uspsVerify/0.0.1
 
 
 ## Usage
+Run locally using npm start. Service default will start on port 3000. Post and Get are both supported, as are query and body.\
+set:
+ - process.env.PORT to overide default port
+ - process.env.USPSUserID see https://www.usps.com/business/web-tools-apis/welcome.htm for details
+
+Or
+docker pull dthompson55/uspsverify
 docker run -p 3000:3000 dthompson55/uspsverify
 
 For testing try this - http://localhost:3000/dataday/uspsVerify/1.0.0/verify?address={"Address1": "3614 Church","Address2": "","City": "Evanston", "State": "IL", "ZIP": ""}
